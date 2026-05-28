@@ -1,0 +1,49 @@
+/* BASE */
+.controller.xbox {
+    background: url("basemodv2.png") center/contain no-repeat !important;
+}
+
+/* TRIGGERS */
+.controller.xbox .trigger {
+    background: url("triggermod.png") no-repeat center !important;
+    opacity: 0;
+}
+.controller.xbox .trigger.pressed {
+    opacity: 1 !important;
+}
+
+/* BUMPERS */
+.controller.xbox .bumper {
+    background: url("bumpermod.png") no-repeat center !important;
+    opacity: 0;
+}
+.controller.xbox .bumper.pressed {
+    opacity: 1 !important;
+}
+
+/* STICKS */
+.controller.xbox .stick {
+    background: url("stickmod.png") no-repeat center !important;
+}
+
+/* DPAD */
+.controller.xbox .face {
+    background: url("dpadmod.png") no-repeat center !important;
+}
+
+/* ABXY */
+.controller.xbox .button {
+    width: 48px;
+    height: 48px;
+    background: url("abxymod.png") no-repeat !important;
+}
+
+.controller.xbox .a { background-position: 0 0 !important; }
+.controller.xbox .b { background-position: -48px 0 !important; }
+.controller.xbox .x { background-position: -96px 0 !important; }
+.controller.xbox .y { background-position: -144px 0 !important; }
+
+.controller.xbox .button.pressed {
+    background-position-y: -48px !important;
+    opacity: 1 !important;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gamepad Skin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="controller xbox">
+
+    <div class="trigger left"></div>
+    <div class="trigger right"></div>
+
+    <div class="bumper left"></div>
+    <div class="bumper right"></div>
+
+    <div class="stick left"></div>
+    <div class="stick right"></div>
+
+    <div class="face up"></div>
+    <div class="face down"></div>
+    <div class="face left"></div>
+    <div class="face right"></div>
+
+    <div class="button a"></div>
+    <div class="button b"></div>
+    <div class="button x"></div>
+    <div class="button y"></div>
+
+</div>
+
+<script>
+let controllerIndex = null;
+
+window.addEventListener("gamepadconnected", (e) => {
+    controllerIndex = e.gamepad.index;
+});
+
+function update() {
+    const gp = navigator.getGamepads()[controllerIndex];
+    if (!gp) return requestAnimationFrame(update);
+
+    // ABXY
+    document.querySelector(".a").classList.toggle("pressed", gp.buttons[0].pressed);
+    document.querySelector(".b").classList.toggle("pressed", gp.buttons[1].pressed);
+    document.querySelector(".x").classList.toggle("pressed", gp.buttons[2].pressed);
+    document.querySelector(".y").classList.toggle("pressed", gp.buttons[3].pressed);
+
+    // bumpers
+    document.querySelector(".bumper.left").classList.toggle("pressed", gp.buttons[4].pressed);
+    document.querySelector(".bumper.right").classList.toggle("pressed", gp.buttons[5].pressed);
+
+    // triggers
+    document.querySelector(".trigger.left").classList.toggle("pressed", gp.buttons[6].pressed);
+    document.querySelector(".trigger.right").classList.toggle("pressed", gp.buttons[7].pressed);
+
+    requestAnimationFrame(update);
+}
+
+update();
+</script>
+
+</body>
+</html>
