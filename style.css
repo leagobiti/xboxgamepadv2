@@ -1,11 +1,11 @@
 /* BASE */
 .controller.xbox {
-    background: url("basemodv2.png") center/contain no-repeat !important;
+    background: url("https://leagobiti.github.io/xboxgamepadv2/basemodv2.png") center/contain no-repeat !important;
 }
 
 /* TRIGGERS */
 .controller.xbox .trigger {
-    background: url("triggermod.png") no-repeat center !important;
+    background: url("https://leagobiti.github.io/xboxgamepadv2/triggermod.png") no-repeat center !important;
     opacity: 0;
 }
 .controller.xbox .trigger.pressed {
@@ -14,7 +14,7 @@
 
 /* BUMPERS */
 .controller.xbox .bumper {
-    background: url("bumpermod.png") no-repeat center !important;
+    background: url("https://leagobiti.github.io/xboxgamepadv2/bumpermod.png") no-repeat center !important;
     opacity: 0;
 }
 .controller.xbox .bumper.pressed {
@@ -23,19 +23,19 @@
 
 /* STICKS */
 .controller.xbox .stick {
-    background: url("stickmod.png") no-repeat center !important;
+    background: url("https://leagobiti.github.io/xboxgamepadv2/stickmodv2.png") no-repeat center !important;
 }
 
 /* DPAD */
 .controller.xbox .face {
-    background: url("dpadmod.png") no-repeat center !important;
+    background: url("https://leagobiti.github.io/xboxgamepadv2/dpadmod.png") no-repeat center !important;
 }
 
 /* ABXY */
 .controller.xbox .button {
     width: 48px;
     height: 48px;
-    background: url("abxymod.png") no-repeat !important;
+    background: url("https://leagobiti.github.io/xboxgamepadv2/abxymod.png") no-repeat !important;
 }
 
 .controller.xbox .a { background-position: 0 0 !important; }
